@@ -1,0 +1,25 @@
+.container{
+  width: 100%;  
+      max-width: 1640px;  
+      margin: 0 auto;  
+      padding: 0px; 
+     border:2px solid black;
+}
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure wrapper takes full height */
+}
+
+.content {
+  flex: 1; /* Make content expand to take available space */
+}
+
+
+app-footer {
+ 
+  text-align: center;
+  border-top: 1px solid #ccc;
+}

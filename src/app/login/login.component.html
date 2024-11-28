@@ -1,0 +1,48 @@
+<div id="login">
+  <div class="login-container">
+    <div class="logo">
+      <img src="https://chumbak.com/cdn/shop/files/9-1.png?v=1693220644" alt="ManditiMoments" class="logo-img">
+    </div>
+  
+    <h1>Login with OTP</h1>
+    <h2>Enter your log in details</h2>
+  
+    <form class="login-form">
+      <div class="phone-input">
+       
+        <input 
+          type="tel" 
+          formControlName="phoneNumber"
+          placeholder="Phone number"
+          class="phone-number-input"
+          maxlength="10">
+      </div>
+  
+      <button 
+        (click)="onRequestOTP()" 
+        class="otp-button"
+        [disabled]="!loginForm.valid">
+        Request OTP
+        <span class="arrow">→</span>
+      </button>
+  
+      <div>
+        <div class="divider">
+            <span>Or Login Using</span>
+        </div>
+     
+      </div>
+  
+      <div class="alternative-login">
+        <button (click)="loginWithEmail()" class="alt-login-btn">
+          <i class="email-icon">✉</i>
+          Email
+        </button>
+        <button (click)="loginWithWhatsApp()" class="alt-login-btn">
+          <i class="whatsapp-icon">📱</i>
+          WhatsApp
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
